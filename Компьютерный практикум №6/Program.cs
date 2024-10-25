@@ -175,42 +175,73 @@ namespace Компьютерный_практикум__6
             //}
 
             //Дополнительная задача
-            Console.Write("Введите признак геометрической фигуры: ");
-            char sign = Convert.ToChar(Console.Read());
-            double s;
-            double p;
-            switch (sign)
-            {
-                case 'К':
-                case 'к':
-                    Console.Write("Введите радиус: ");
-                    int r = int.Parse(Console.ReadLine());
-                    s = Math.PI * Math.Pow(r, 2);
-                    p = 2 * Math.PI * r;
-                    Console.WriteLine($"Периметр: {p}\nПлощадь: {s}");
-                    break;
-                case 'П':
-                case 'п':
-                    Console.Write("Введите высоту: ");
-                    int heigth = int.Parse(Console.ReadLine());
-                    Console.Write("Введите ширину: ");
-                    int width = int.Parse(Console.ReadLine());
-                    s = width * heigth;
-                    p = 2 * (width + heigth);
-                    break;
-                case 'Д':
-                case 'д':
-                    Console.Write("Введите первую сторону: ");
-                    int first = int.Parse(Console.ReadLine());
-                    Console.Write("Введите первую сторону: ");
-                    int second = int.Parse(Console.ReadLine());
-                    Console.Write("Введите первую сторону: ");
-                    int third = int.Parse(Console.ReadLine());
-                    break;
-                default:
-                    Console.WriteLine("Неправильный признак!");
-                    break;
-            }
+            //Дан признак геометрической фигуры на плоскости: 
+            //К - это круг
+            //П - прямоугольник
+            //Т - треугольник
+            //Вывести на экран периметр и площаль заданной фигуры с учётом, что данные необходимые для расчётов спрашивают у пользователя.
+            //Console.Write("Введите признак геометрической фигуры: ");
+            //char sign = Console.ReadKey().KeyChar;
+            //Console.WriteLine();
+            //double square;
+            //double perimeter;
+
+            //switch (sign)
+            //{
+            //    case 'К':
+            //    case 'к':
+            //        Console.WriteLine("Вы выбрали круг");
+            //        Console.Write("Введите радиус: ");
+            //        int r = int.Parse(Console.ReadLine());
+
+            //        square = Math.PI * Math.Pow(r, 2);
+            //        perimeter = 2 * Math.PI * r;
+
+            //        Console.WriteLine($"Периметр: {perimeter:N2}\nПлощадь: {square:N2}");
+            //        break;
+
+            //    case 'П':
+            //    case 'п':
+            //        Console.WriteLine("Вы выбрали прямоугольник");
+            //        Console.Write("Введите высоту: ");
+            //        int heigth = int.Parse(Console.ReadLine());
+            //        Console.Write("Введите ширину: ");
+            //        int width = int.Parse(Console.ReadLine());
+
+            //        square = width * heigth;
+            //        perimeter = 2 * (width + heigth);
+
+            //        Console.WriteLine($"Периметр: {perimeter:N2}\nПлощадь: {square:N2}");
+            //        break;
+
+            //    case 'Т':
+            //    case 'т':
+            //        Console.WriteLine("Вы выбрали треугольник");
+            //        Console.Write("Введите первую сторону: ");
+            //        int a = int.Parse(Console.ReadLine());
+            //        Console.Write("Введите вторую сторону: ");
+            //        int b = int.Parse(Console.ReadLine());
+            //        Console.Write("Введите первую сторону: ");
+            //        int c = int.Parse(Console.ReadLine());
+
+            //        if (a < b + c && b < a + c && c < a + b)
+            //        {
+            //            double p = (a + b + c) / 2.0;
+            //            square = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+            //            perimeter = a + b + c;
+
+            //            Console.WriteLine($"Периметр: {perimeter:N2}\nПлощадь: {square:N2}");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Такого треугольника не существует");
+            //        }
+            //        break;
+
+            //    default:
+            //        Console.WriteLine("Неправильный признак!");
+            //        break;
+            //}
 
             Console.ReadKey();
         }
