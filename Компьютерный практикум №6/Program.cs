@@ -150,8 +150,8 @@ namespace Компьютерный_практикум__6
             //Вывести название предмета по введенной первой букве: ф – физика,
             //м – математика, и – история, г – география, б – биология.
             //Console.Write($"Введите название предмета: ");
-            //string sign = Console.ReadLine();
-            //switch (sign)
+            //string subject = Console.ReadLine();
+            //switch (subject)
             //{
             //    case "ф":
             //        Console.WriteLine("Физика");
