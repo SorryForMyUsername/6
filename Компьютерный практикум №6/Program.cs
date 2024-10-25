@@ -123,22 +123,22 @@ namespace Компьютерный_практикум__6
             //Вывести на экран максимальную скорость транспортного средства
             //в зависимости от введенного признака.
             //Console.Write($"Введите признак транспортного средства: ");
-            //string sign = Console.ReadLine();
+            //char sign = Convert.ToChar(Console.Read());
             //switch (sign)
             //{
-            //    case "а":
+            //    case 'а':
             //        Console.WriteLine("Максимальная скорость автомобиля: 200 км/ч");
             //        break;
-            //    case "в":
+            //    case 'в':
             //        Console.WriteLine("Максимальная скорость велосипеда: 30 км/ч");
             //        break;
-            //    case "м":
+            //    case 'м':
             //        Console.WriteLine("Максимальная скорость мотоцикла: 150 км/ч");
             //        break;
-            //    case "с":
+            //    case 'с':
             //        Console.WriteLine("Максимальная скорость самолёта: 1000 км/ч");
             //        break;
-            //    case "п":
+            //    case 'п':
             //        Console.WriteLine("Максимальная скорость поезда: 400 км/ч");
             //        break;
             //    default:
@@ -150,22 +150,22 @@ namespace Компьютерный_практикум__6
             //Вывести название предмета по введенной первой букве: ф – физика,
             //м – математика, и – история, г – география, б – биология.
             //Console.Write($"Введите название предмета: ");
-            //string subject = Console.ReadLine();
+            //char subject = Convert.ToChar(Console.Read());
             //switch (subject)
             //{
-            //    case "ф":
+            //    case 'ф':
             //        Console.WriteLine("Физика");
             //        break;
-            //    case "м":
+            //    case 'м':
             //        Console.WriteLine("Математика");
             //        break;
-            //    case "и":
+            //    case 'и':
             //        Console.WriteLine("История");
             //        break;
-            //    case "г":
+            //    case 'г':
             //        Console.WriteLine("География");
             //        break;
-            //    case "б":
+            //    case 'б':
             //        Console.WriteLine("Биология");
             //        break;
             //    default:
