@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -172,6 +173,44 @@ namespace Компьютерный_практикум__6
             //        Console.WriteLine("Несуществующий предмет!");
             //        break;
             //}
+
+            //Дополнительная задача
+            Console.Write("Введите признак геометрической фигуры: ");
+            char sign = Convert.ToChar(Console.Read());
+            double s;
+            double p;
+            switch (sign)
+            {
+                case 'К':
+                case 'к':
+                    Console.Write("Введите радиус: ");
+                    int r = int.Parse(Console.ReadLine());
+                    s = Math.PI * Math.Pow(r, 2);
+                    p = 2 * Math.PI * r;
+                    Console.WriteLine($"Периметр: {p}\nПлощадь: {s}");
+                    break;
+                case 'П':
+                case 'п':
+                    Console.Write("Введите высоту: ");
+                    int heigth = int.Parse(Console.ReadLine());
+                    Console.Write("Введите ширину: ");
+                    int width = int.Parse(Console.ReadLine());
+                    s = width * heigth;
+                    p = 2 * (width + heigth);
+                    break;
+                case 'Д':
+                case 'д':
+                    Console.Write("Введите первую сторону: ");
+                    int first = int.Parse(Console.ReadLine());
+                    Console.Write("Введите первую сторону: ");
+                    int second = int.Parse(Console.ReadLine());
+                    Console.Write("Введите первую сторону: ");
+                    int third = int.Parse(Console.ReadLine());
+                    break;
+                default:
+                    Console.WriteLine("Неправильный признак!");
+                    break;
+            }
 
             Console.ReadKey();
         }
